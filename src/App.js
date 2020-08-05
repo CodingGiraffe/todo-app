@@ -12,9 +12,9 @@ class App extends Component {
     }
 }
 
-// toggle = () => {
-//   this.setState({isOn: !this.state.isOn})
-// }
+toggle = () => {
+  this.setState({isOn: !this.state.isOn})
+}
 
 inputUpdate = event => {
   this.setState({input: event.target.value})
@@ -35,7 +35,7 @@ formSubmit = event => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>
-          Hello World
+          My First React Site
         </h1>
         <form onSubmit={this.formSubmit}>
           <input value={this.state.input} onChange={this.inputUpdate}/>
